@@ -7,6 +7,7 @@ module.exports = defineConfig({
     },
     baseUrl:'https://www.saucedemo.com/v1/',
     experimentalStudio: true,
-    watchForFileChanges: false
+    
   },
+  watchForFileChanges: false
 });

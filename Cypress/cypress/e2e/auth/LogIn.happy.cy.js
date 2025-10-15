@@ -15,6 +15,7 @@ describe('Auth - Login (Happy Path)', () => {
     loginPage.user().type(user_name);
     loginPage.password().type(password);
     loginPage.submit().click();
+    cy.url().should('include', '/inventory');
     cy.contains('Products').should('be.visible');
   
   });
