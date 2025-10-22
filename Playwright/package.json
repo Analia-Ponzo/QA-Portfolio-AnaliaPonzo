@@ -1,14 +1,16 @@
 {
-  "name": "playwright",
+  "name": "playwright-project",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "private": true,
   "devDependencies": {
-    "@playwright/test": "^1.56.1",
-    "@types/node": "^24.9.1"
+    "@playwright/test": "^1.48.0",
+    "typescript": "^5.4.0",
+    "ts-node": "^10.9.2"
+  },
+  "scripts": {
+    "pw:test": "playwright test",
+    "pw:ui": "playwright test --ui",
+    "pw:report": "playwright show-report"
   }
 }
+

@@ -1,0 +1,22 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# Env
+.env
+.env.*
+
+# Cypress artifacts
+Cypress/cypress/screenshots/
+Cypress/cypress/videos/
+Cypress/cypress/reports/
+Cypress/cypress/report/
+
+# Playwright artifacts
+Playwright/playwright-report/
+Playwright/test-results/
+Playwright/captures/
+
+# OS/IDE
+.DS_Store
+.vscode/

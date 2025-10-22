@@ -1,15 +1,15 @@
 {
-  "name": "cypress",
+  "name": "cypress-project",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "private": true,
   "devDependencies": {
-    "cypress": "^15.4.0"
+    "cypress": "^13.6.0",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "@faker-js/faker": "^8.4.1"
+  },
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:report": "cypress run && npx mochawesome-merge cypress/reports/*.json | npx marge -o cypress/report"
   }
 }
